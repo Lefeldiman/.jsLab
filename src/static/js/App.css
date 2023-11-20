@@ -1,0 +1,22 @@
+/* App.css */
+.app {
+  font-family: Arial, sans-serif;
+  /* Add your styles here */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  /* Add your styles here */
+}
+
+nav button {
+  /* Add your styles here */
+}
+
+table {
+  width: 100%;
+  /* Add your styles here */
+}
+
+/* Add more styles for table headers, rows, cells, and footer */
