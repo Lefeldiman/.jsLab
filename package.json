@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "homepage": "https://lefeldiman.info",
   "private": true,
-  "main": "index.js",
   "license": "MIT",
+  "main": "index.js",
   "dependencies": {
-    "-": "^0.0.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.11.16",
@@ -27,8 +26,6 @@
     "jquery": "^3.6.0",
     "jwt-decode": "^3.1.2",
     "mysql2": "^2.3.3",
-    "node-polyfill-webpack-plugin": "^1.1.4",
-    "npm": "^9.8.1",
     "react": "^17.0.2",
     "react-cookie-consent": "^7.5.0",
     "react-dom": "^17.0.2",
@@ -43,38 +40,19 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "prettify": "prettier -l --write \"**/*.js\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "prettify": "prettier --write \"src/**/*.{js,jsx}\"",
     "dev": "nodemon src/index.js"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browser": {
-    "crypto": false,
-    "fs": false,
-    "http": false,
-    "os": false,
-    "path": false,
-    "stream": false
+    "extends": ["react-app", "react-app/jest"]
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.15.0",
@@ -82,8 +60,7 @@
     "jest": "^29.3.1",
     "nodemon": "^2.0.20",
     "prettier": "^2.7.1",
-    "ts-loader": "^9.3.0",
-
+    "ts-loader": "^9.3.0"
   },
   "resolutions": {
     "ansi-regex": "5.0.1"
@@ -91,7 +68,6 @@
   "prettier": {
     "trailingComma": "all",
     "tabWidth": 4,
-    "useTabs": false,
     "semi": true,
     "singleQuote": true
   }
